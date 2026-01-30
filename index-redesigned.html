@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>The Lost Block | Vacation Rentals in Terlingua TX and Bentonville AR</title>
+  <meta name="description" content="The Lost Block is a collection of properties owned and developed by 2 women. Our properties are managed by different resources in Terlingua, TX and Bentonville, AR."/>
+  
+  <link rel="canonical" href="https://www.thelostblock.com"/>
+  
+  <meta property="og:title" content="The Lost Block | Vacation Rentals in Terlingua TX and Bentonville AR"/>
+  <meta property="og:description" content="The Lost Block is a collection of properties owned and developed by 2 women. Our properties are managed by different resources in Terlingua, TX and Bentonville, AR."/>
+  <meta property="og:url" content="https://www.thelostblock.com"/>
+  <meta property="og:site_name" content="TheLostBlock"/>
+  <meta property="og:type" content="website"/>
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="The Lost Block | Vacation Rentals in Terlingua TX and Bentonville AR"/>
+  <meta name="twitter:description" content="The Lost Block is a collection of properties owned and developed by 2 women. Our properties are managed by different resources in Terlingua, TX and Bentonville, AR."/>
+  
+  <meta name="keywords" content="big bend, big bend lodging, terlingua, terlingua lodging, big bend hotel, big bend national park, terlingua vacation, big bend vacation, vacation rental, ghosttown, ghost town, starlight theatre, starlight, big bend national park, big bend state park, dark sky, dark skies, west texas">
+  
+  <meta name="google-site-verification" content="s5xIutzz8XIYEKMrKlz2PjvqaJUefU1aX2tJk9BMCrA"/>
+
+  <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
+  <link rel="apple-touch-icon" href="assets/favicon.jpg">
+
+  <style>
+    /* Import Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    
+    /* CSS Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #2f2e2e;
+      background-color: #fff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+    
+    /* Container */
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    .site-header {
+      background: rgba(0, 0, 0, 0.72);
+      padding: 20px 0;
+      position: relative;
+      z-index: 100;
+    }
+    
+    .header-content {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .site-title {
+      font-size: 30px;
+      font-weight: 400;
+      color: #fff;
+      text-align: center;
+      margin: 10px 0;
+    }
+    
+    .site-subtitle {
+      font-size: 25px;
+      font-weight: 400;
+      color: #fff;
+      text-align: center;
+    }
+    
+    /* Main Content */
+    .main-content {
+      background-image: url('assets/hero-background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      padding: 40px 0;
+      position: relative;
+    }
+    
+    .main-content::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(47, 46, 46, 0.3);
+      z-index: 0;
+    }
+    
+    .properties-grid {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Property Card */
+    .property-card {
+      background: rgba(244, 244, 244, 0.78);
+      border-radius: 5px;
+      padding: 30px;
+      padding-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+    
+    .property-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .property-image {
+      width: 189px;
+      height: 118px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    
+    .property-title {
+      font-size: 25px;
+      font-weight: 700;
+      color: #23899c;
+      text-align: center;
+      margin: 10px 0;
+    }
+    
+    .property-description {
+      font-size: 16px;
+      color: #605e5e;
+      text-align: center;
+      line-height: 1.8;
+    }
+    
+    .property-button {
+      background-color: #a0a09f;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      border: 2px solid #323232;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+    
+    .property-button:hover {
+      background-color: #323232;
+      border-color: #323232;
+      color: #fff;
+    }
+    
+    /* Social Icons */
+    .social-icons {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+    }
+    
+    .social-icons a {
+      display: block;
+      transition: opacity 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      opacity: 0.7;
+    }
+    
+    .social-icons img {
+      display: block;
+    }
+    
+    /* Footer */
+    .site-footer {
+      background-color: #4d7dc9;
+      padding: 40px 0;
+      color: #fff;
+    }
+    
+    .footer-content {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    
+    .footer-text {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .site-title {
+        font-size: 24px;
+      }
+      
+      .site-subtitle {
+        font-size: 20px;
+      }
+      
+      .properties-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      .property-card {
+        padding: 20px;
+      }
+      
+      .property-title {
+        font-size: 20px;
+      }
+      
+      .property-description {
+        font-size: 14px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .container,
+      .header-content,
+      .properties-grid,
+      .footer-content {
+        padding: 0 15px;
+      }
+      
+      .property-button {
+        font-size: 16px;
+        padding: 10px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <h1 class="site-title">The Lost Block</h1>
+      <p class="site-subtitle">Vacation Rentals in Terlingua TX and Bentonville AR</p>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="properties-grid">
+      <!-- Property 1 -->
+      <article class="property-card">
+        <div class="property-image-wrapper">
+          <img src="assets/logo-stargazer.png" alt="StarGazer" class="property-image">
+        </div>
+        <h2 class="property-title">Big Bend StarGazer</h2>
+        <p class="property-description">
+          Sleeps 2 - Prime location, gorgeous and uniquely renovated 27' Airstream Safari, located on 40 acres between Terlingua Ghost town and Lajitas. Enjoy your own private scenic overlook of the park, 1,000 square feet of covered outdoor living space with an outdoor kitchen. Separate bathhouse with hot outdoor shower. Outstanding views of the Chisos, Mesa De Anguilla and the desert valley. Full amenities.
+        </p>
+        <p class="property-description" style="font-weight: bold;">
+          From $165/night
+        </p>
+        <button class="property-button" onclick="window.location.href='http://www.airbnb.com/h/bbstargazer'">Read More</button>
+        <div class="social-icons">
+          <a href="http://www.facebook.com/bigbendstargazer" target="_blank" rel="noopener noreferrer">
+            <img src="assets/social-facebook.png" alt="Facebook" width="43" height="43">
+          </a>
+          <a href="https://instagram.com/bigbend.stargazer" target="_blank" rel="noopener noreferrer">
+            <img src="assets/social-instagram.png" alt="Instagram" width="43" height="43">
+          </a>
+        </div>
+      </article>
+
+      <!-- Property 2 -->
+      <article class="property-card">
+        <div class="property-image-wrapper">
+          <img src="assets/logo-javelina.png" alt="Javelina Hideout" class="property-image">
+        </div>
+        <h2 class="property-title">Javelina Hideout</h2>
+        <p class="property-description">
+          Sleeps 5 - Off-Grid EcoLodge, solar power and rainwater collection. Great experience for those curious about sustainable living. JH offers amazing sunsets and sunrises, with a rustic modern desert vibe. Enjoy our walking trail and bird watching from the north picture window or the 1,000 sq ft shaded porches. Full amenities. See our <a href="http://www.javelinahideout.com" target="_blank" style="text-decoration: underline;">dedicated website</a> for more information and direct bookings.
+        </p>
+        <p class="property-description" style="font-weight: bold;">
+          From $165/night
+        </p>
+        <button class="property-button" onclick="window.location.href='https://www.airbnb.com/rooms/40091880'">Book Now</button>
+        <div class="social-icons">
+          <a href="http://www.facebook.com/javelinahideout" target="_blank" rel="noopener noreferrer">
+            <img src="assets/social-facebook.png" alt="Facebook" width="43" height="43">
+          </a>
+          <a href="https://instagram.com/javelina_hideout" target="_blank" rel="noopener noreferrer">
+            <img src="assets/social-instagram.png" alt="Instagram" width="43" height="43">
+          </a>
+        </div>
+      </article>
+
+      <!-- Property 3 -->
+      <article class="property-card">
+        <div class="property-image-wrapper">
+          <img src="assets/logo-casita.png" alt="Casita 47" class="property-image" style="width: 111px; height: 111px; margin: 0 auto;">
+        </div>
+        <h2 class="property-title">Milky Way Run</h2>
+        <p class="property-description">
+          Milky Way Run is a tiny cabin, private and secluded on 5 acres of desert land. It offers a shaded porch with an outdoor kitchen (propane burners) and a large charcoal grill. A composting toilet is provided. This is a self clean and BYOW (bring your own water) rental. Sleeps 2.
+        </p>
+        <p class="property-description">
+          Watch for the Milky Way!
+        </p>
+        <p class="property-description" style="font-weight: bold;">
+          From $78/night
+        </p>
+        <button class="property-button" onclick="window.location.href='https://www.airbnb.com/rooms/41434304'">Book Now</button>
+      </article>
+
+      <!-- Property 4 -->
+      <article class="property-card">
+        <div class="property-image-wrapper">
+          <img src="assets/logo-stargazer.png" alt="Desert Rose" class="property-image">
+        </div>
+        <h2 class="property-title">StarGazer PLUS</h2>
+        <p class="property-description">
+          Sleeps 4! This is the same property as our original Big Bend StarGazer listing, but with a second Airstream. The original Safari Airstream has twin beds, AC, kitchenette, and half bath. The smaller Airstream Argosy is a sleeper camper, with 2 beds, AC, and coffee station.
+        </p>
+        <p class="property-description" style="font-weight: bold;">
+          From $185/night
+        </p>
+        <button class="property-button" onclick="window.location.href='https://www.airbnb.com/rooms/1168193359146633095'">Book Now</button>
+        <div class="social-icons">
+          <a href="http://www.facebook.com/bigbendstargazer" target="_blank" rel="noopener noreferrer">
+            <img src="assets/social-facebook.png" alt="Facebook" width="43" height="43">
+          </a>
+          <a href="https://instagram.com/bigbend.stargazer" target="_blank" rel="noopener noreferrer">
+            <img src="assets/social-instagram.png" alt="Instagram" width="43" height="43">
+          </a>
+        </div>
+      </article>
+
+      <!-- Property 5 -->
+      <article class="property-card">
+        <div class="property-image-wrapper">
+          <img src="assets/logo-lunarpod.png" alt="LunarPod" class="property-image" style="width: 189px; height: 122px;">
+        </div>
+        <h2 class="property-title">LunarPod</h2>
+        <p class="property-description">
+          LunarPod is a small teardrop camper that sleeps 2, nestled under a metal shade cover with a solid west facing wall, an outdoor kitchen, a picnic table, and a charcoal grill. We provide a bathhouse with a flush toilet and hot shower. This is a self clean unit. The pod sleeps 2 and we do allow up to 2 more occupants in a tent site.
+        </p>
+        <p class="property-description">
+          Watch for aliens!
+        </p>
+        <p class="property-description" style="font-weight: bold;">
+          From $78/night
+        </p>
+        <button class="property-button" onclick="window.location.href='https://www.airbnb.com/rooms/45543370'">Book Now</button>
+      </article>
+
+      <!-- Property 6 -->
+      <article class="property-card">
+        <div class="property-image-wrapper">
+          <img src="assets/logo-wheelhaus.png" alt="WheelHaus on Monroe" class="property-image" style="width: 189px; height: 122px;">
+        </div>
+        <h2 class="property-title">WheelHaus on Monroe</h2>
+        <p class="property-description">
+          WheelHaus on Monroe is a gorgeous 3 bed, 2 bath home in downtown Bentonville, located approximately 1 mile from the downtown square, and steps to the nearest Slaughter Pen trailhead. The single car garage with a glass garage door is devoted to bike wrenching, bike storage, and hanging out. Walking distance to the world famous Crystal Bridges Museum, you'll be in the middle of some of Bentonville's finest attractions.
+        </p>
+        <p class="property-description" style="font-weight: bold;">
+          From $96/night
+        </p>
+        <button class="property-button" onclick="window.location.href='https://www.airbnb.com/rooms/1073879590940626899'">Book Now</button>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-text">
+        The Lost Block is a collection of properties owned and developed by 2 women.<br>
+        Our properties are managed by different resources in Terlingua, TX and Bentonville, AR.<br><br>
+        <strong>Contact us for more information about our properties.</strong>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple analytics-free script for basic functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('The Lost Block - Website Loaded');
+    });
+  </script>
+</body>
+</html>
