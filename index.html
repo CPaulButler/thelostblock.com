@@ -266,6 +266,140 @@
         opacity: 1 !important;
         visibility: visible !important;
         overflow: visible !important;
+        height: auto !important;
+      }
+
+      /* Ensure card inner containers stack properly */
+      #comp-kkhw9k0b [data-mesh-id$="inlineContent-gridContainer"],
+      #comp-mcp2v4zf [data-mesh-id$="inlineContent-gridContainer"],
+      #comp-mcp2wfev [data-mesh-id$="inlineContent-gridContainer"],
+      #comp-mcp2f6zc [data-mesh-id$="inlineContent-gridContainer"],
+      #comp-kke9rci3 [data-mesh-id$="inlineContent-gridContainer"],
+      #comp-mcp2wu4k [data-mesh-id$="inlineContent-gridContainer"] {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        height: auto !important;
+        min-height: 0 !important;
+      }
+
+      /* Force all children inside card grids to appear in source order */
+      [data-mesh-id$="inlineContent-gridContainer"] > * {
+        position: relative !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        margin: 10px auto !important;
+        grid-area: auto !important;
+        order: 0 !important;
+      }
+
+      /* LunarPod card - force image to top */
+      #comp-mcp2wu4k [data-mesh-id$="inlineContent-gridContainer"] {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+      }
+
+      /* Or specifically target LunarPod image wrapper to appear first */
+      #comp-mcp2wu4o {
+        order: -10 !important;
+      }
+
+      #comp-mcp2wu4p {
+        order: 0 !important;
+      }
+
+      #comp-mcp2wu4p1 {
+        order: 10 !important;
+      }
+
+      /* Override all grid positioning for LunarPod card children */
+      #comp-mcp2wu4k [data-mesh-id$="inlineContent-gridContainer"] {
+        display: block !important;
+        margin-top: 0 !important;
+      }
+
+      #comp-mcp2wu4o,
+      #comp-mcp2wu4p,
+      #comp-mcp2wu4p1 {
+        position: static !important;
+        margin: 15px auto !important;
+        left: 0 !important;
+        grid-area: auto !important;
+        width: 100% !important;
+      }
+
+      /* Make LunarPod children appear in correct order by floating */
+      #comp-mcp2wu4k [data-mesh-id$="inlineContent-gridContainer"] {
+        display: table !important;
+        width: 100% !important;
+      }
+
+      #comp-mcp2wu4o {
+        display: table-header-group !important;
+      }
+
+      #comp-mcp2wu4p {
+        display: table-row-group !important;
+      }
+
+      #comp-mcp2wu4p1 {
+        display: table-footer-group !important;
+      }
+
+      /* More specific override for LunarPod grid container and children */
+      [data-mesh-id="comp-mcp2wu4kinlineContent-gridContainer"] {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-rows: none !important;
+        margin-top: 0 !important;
+      }
+
+      [data-mesh-id="comp-mcp2wu4kinlineContent-gridContainer"] > #comp-mcp2wu4o {
+        order: 1 !important;
+        margin: 10px auto 20px auto !important;
+        position: relative !important;
+        left: 0 !important;
+        top: 0 !important;
+      }
+
+      [data-mesh-id="comp-mcp2wu4kinlineContent-gridContainer"] > #comp-mcp2wu4p {
+        order: 2 !important;
+        margin: 10px auto !important;
+        position: relative !important;
+        left: 0 !important;
+        top: 0 !important;
+      }
+
+      [data-mesh-id="comp-mcp2wu4kinlineContent-gridContainer"] > #comp-mcp2wu4p1 {
+        order: 3 !important;
+        margin: 10px auto 20px auto !important;
+        position: relative !important;
+        left: 0 !important;
+        top: 0 !important;
+      }
+
+      /* Ensure images are not clipped */
+      [id^="comp-"] img,
+      [id^="comp-"] [id*="comp-"][id*="k"] img,
+      .MazNVa img,
+      .BI8PVQ img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+        object-fit: contain !important;
+        clip-path: none !important;
+        overflow: visible !important;
+      }
+
+      /* Remove any fixed heights on image containers */
+      [id^="comp-"] [class*="contentPadding"],
+      .MazNVa,
+      .BI8PVQ {
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        overflow: visible !important;
       }
 
       /* Ensure card backgrounds are visible */
