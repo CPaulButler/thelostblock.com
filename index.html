@@ -308,6 +308,32 @@
         visibility: visible !important;
         transform: none !important;
       }
+
+      /* Ensure buttons are clickable on mobile */
+      [id^="comp-"] button,
+      [id^="comp-"] a,
+      [class*="Button"],
+      .FubTgk,
+      .PlZyDq {
+        pointer-events: auto !important;
+        position: relative !important;
+        z-index: 10 !important;
+        cursor: pointer !important;
+        touch-action: manipulation !important;
+      }
+
+      /* Specific button IDs */
+      #comp-kkefyts8,
+      #comp-mcp2v4zu1,
+      #comp-mcp2wff21,
+      #comp-mcp2f702,
+      #comp-kke9zilw,
+      #comp-mcp2wu4p1 {
+        pointer-events: auto !important;
+        z-index: 10 !important;
+        position: relative !important;
+        cursor: pointer !important;
+      }
     }
 
     /* Prevent overlapping cards on tablets (e.g., iPad) */
